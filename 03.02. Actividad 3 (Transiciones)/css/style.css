@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+}
+
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    line-height: 200px;
+    margin: 30px;
+}
+
+#background:hover{
+    background-color: red;
+    -webkit-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+}
+
+#fontsize:hover{
+    background-color: purple;
+    font-size: 25px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#color:hover{
+    background-color: blue;
+    color: red;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#lineheigth:hover{
+    background-color: lightblue;
+    line-height: 300px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#borderradius:hover{
+    background-color: turquoise;
+    border-radius: 15px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#boxshadow:hover{
+    background-color: yellow;
+    box-shadow: 5px 10px 20px 2px rgba(0, 0, 0, 0.5);
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#opacity:hover{
+    background-color: orange;
+    opacity: 0.5;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#border:hover{
+    background-color: grey;
+    border: black 1px solid;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#margin:hover{
+    background-color: darkblue;
+    margin: 60px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
+
+#padding:hover{
+    background-color: black;
+    padding: 30px;
+    -webkit-transition: 1s linear;
+    transition: 1s linear;
+}
