@@ -1,0 +1,17 @@
+.tableListadoExamenes{
+    @include floatW(80%);
+    margin-left: 10%;
+    text-align: center;
+    border: 1px black solid;
+}
+
+table,tr,th,td{
+    width: 20%;
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+th,td{
+    padding: 20px;;
+    font-size: $fontSize1;
+}

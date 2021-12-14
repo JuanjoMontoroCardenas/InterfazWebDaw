@@ -1,0 +1,29 @@
+.divFormExamen{
+    @include floatW(40%);
+    text-align: left;
+    font-size: $fontSize1;
+    @include marginUlAltaExamen();
+    background-image: url(../../../../multimedia/img/texturaNegra.jpg);
+}
+
+.divFormExamen>ul{
+    height: 350px;
+    overflow-y: scroll;
+    font-size: $fontSize2;
+    margin-top: 10px;
+}
+
+.divFormExamen>ul>li{
+    margin: 10px;
+    padding: 5px;
+    margin-left: 0px;
+    background-color: $mainGris;
+    color: white;
+    border-radius: $borderRadius;
+}
+
+.divFormExamen>ul>li:hover{
+    background-color: black;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}

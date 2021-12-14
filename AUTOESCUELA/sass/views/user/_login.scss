@@ -1,0 +1,24 @@
+.divLogoLogin{
+    @include floatW(60%);
+    margin-left: 20%;
+}
+
+.divLoginRecuerdame{
+    @include floatW(50%);
+    margin-left: 25%;
+    text-align: left;
+    margin-top: 50px;
+    font-size: $fontSize1;
+}
+
+.divLinksLogin{
+    @include floatW(50%);
+    margin-left: 25%;
+    text-align: left;
+    margin-top: 50px;
+}
+
+.divLinksLogin>a{
+    display: inline-block;
+    width: 100%;
+}

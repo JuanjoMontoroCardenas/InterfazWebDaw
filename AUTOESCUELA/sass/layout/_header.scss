@@ -1,0 +1,94 @@
+/*HEADER*/
+header{
+    @include floatW(100%);
+    padding: 20px;
+    margin-bottom: 30px;
+    //background-image: url(../../multimedia/img/texturaNegra.jpg);
+    //NO FUNCIONA, NO ENCUENTRO EL FALLO
+}
+
+.logoHeader{
+    @include floatW(20%);
+}
+
+#parallax{
+    @include floatW(40%);
+    margin-left: 10%;
+
+}
+
+.perfilHeader{
+    @include floatW(5%);
+    margin-left: 75%;
+}
+
+//MENU
+nav{
+    @include floatW(100%);
+    text-align: center;
+    margin-top: 20px;
+    background-color: black;
+    color: white;
+    border-radius: $borderRadius;
+}
+
+nav>ul>li>ul>li{
+    background-color: black;
+    @include paddingLiMenu();
+}
+
+nav ul {
+	list-style:none;
+}
+
+nav ul a {
+	display:block;
+	color:white;
+	text-decoration:none;
+}
+
+nav ul li {
+	position:relative;
+	float:left;
+    @include paddingLiMenu();
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+nav ul li:hover {
+    background-color: $mainRojo;
+    -webkit-transition: background-color 0.5s linear;
+    transition: background-color 0.5s linear;
+}
+
+nav ul ul {
+	display:none;
+	position:absolute;
+	top:100%;
+    width: 100%;
+	right:0;
+	padding:0;
+}
+
+nav ul ul li {
+	float:none;
+    @include paddingLiMenu();
+}
+
+nav ul li:hover > ul {
+	display:block;
+}
+//ACABA MENU
+
+.titleHeader{
+    @include floatW(100%);
+    text-align: left;
+    padding-top: 20px;
+}
+
+.titleHeader>h1{
+    border-bottom: 5px solid $mainRojo;
+    border-right: 5px solid $mainRojo;
+    border-radius: $borderRadius;
+    text-shadow: 2px 2px $mainGris;
+}

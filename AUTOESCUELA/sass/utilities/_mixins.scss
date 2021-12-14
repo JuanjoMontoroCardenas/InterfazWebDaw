@@ -1,0 +1,20 @@
+//flota a la izquierda y le paso width
+@mixin floatW($width){
+    float: left;
+    width: $width;
+}
+
+//padding solo para los apartado del menu de navegacion superior
+@mixin paddingLiMenu(){
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+//padding solo para los apartado del menu de navegacion superior
+@mixin marginUlAltaExamen(){
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 50px;
+}

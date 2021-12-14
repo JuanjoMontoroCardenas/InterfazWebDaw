@@ -1,0 +1,338 @@
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+input, textarea {
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid black;
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+button {
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+#container {
+  float: left;
+  width: 90%;
+  margin-left: 5%;
+  margin-bottom: 130px;
+}
+
+.divForm {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: left;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.divForm > input {
+  width: 100%;
+}
+
+.divForm > textarea {
+  width: 100%;
+}
+
+.divFormButton {
+  text-align: right;
+}
+
+.divForm > select {
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  padding: 2px;
+  border: 2px solid black;
+}
+
+/*HEADER*/
+header {
+  float: left;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.logoHeader {
+  float: left;
+  width: 20%;
+}
+
+#parallax {
+  float: left;
+  width: 40%;
+  margin-left: 10%;
+}
+
+.perfilHeader {
+  float: left;
+  width: 5%;
+  margin-left: 75%;
+}
+
+nav {
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+}
+
+nav > ul > li > ul > li {
+  background-color: black;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul a {
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li {
+  position: relative;
+  float: left;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+nav ul li:hover {
+  background-color: #e90000;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  right: 0;
+  padding: 0;
+}
+
+nav ul ul li {
+  float: none;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+.titleHeader {
+  float: left;
+  width: 100%;
+  text-align: left;
+  padding-top: 20px;
+}
+
+.titleHeader > h1 {
+  border-bottom: 5px solid #e90000;
+  border-right: 5px solid #e90000;
+  border-radius: 5px;
+  text-shadow: 2px 2px #999999;
+}
+
+footer .activaFooter {
+  width: 35px;
+  height: 35px;
+  border: #999999 12px solid;
+  border-radius: 35px;
+  margin: 0 auto;
+  position: relative;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+footer .activaFooter:hover {
+  width: 35px;
+  height: 35px;
+  border: #e90000 12px solid;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  position: relative;
+}
+
+footer {
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  width: 100%;
+  height: 2em;
+  overflow: hidden;
+  margin: 0 auto;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+footer:hover {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  height: 10em;
+}
+
+footer .contieneFooter {
+  margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#999999), to(black));
+  background-image: linear-gradient(180deg, #999999, black);
+}
+
+.centroContenidoFooter {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: center;
+  margin-top: 5px;
+}
+
+footer h3 {
+  font-size: 20px;
+  margin-top: 3px;
+  font-weight: normal;
+}
+
+.activaFooter {
+  -webkit-animation: baila 1s infinite;
+          animation: baila 1s infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes baila {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+}
+
+@keyframes baila {
+  0% {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+  100% {
+    -webkit-transform: translate(0, 20px);
+            transform: translate(0, 20px);
+  }
+}
+
+.divFormExamen {
+  float: left;
+  width: 40%;
+  text-align: left;
+  font-size: 25px;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 50px;
+  background-image: url(../../../../multimedia/img/texturaNegra.jpg);
+}
+
+.divFormExamen > ul {
+  height: 350px;
+  overflow-y: scroll;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.divFormExamen > ul > li {
+  margin: 10px;
+  padding: 5px;
+  margin-left: 0px;
+  background-color: #999999;
+  color: white;
+  border-radius: 5px;
+}
+
+.divFormExamen > ul > li:hover {
+  background-color: black;
+  -webkit-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+
+.divLogoLogin {
+  float: left;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.divLoginRecuerdame {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: left;
+  margin-top: 50px;
+  font-size: 25px;
+}
+
+.divLinksLogin {
+  float: left;
+  width: 50%;
+  margin-left: 25%;
+  text-align: left;
+  margin-top: 50px;
+}
+
+.divLinksLogin > a {
+  display: inline-block;
+  width: 100%;
+}
+
+.tableListadoExamenes {
+  float: left;
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  border: 1px black solid;
+}
+
+table, tr, th, td {
+  width: 20%;
+  border: 1px black solid;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 20px;
+  font-size: 25px;
+}
+/*# sourceMappingURL=style.css.map */

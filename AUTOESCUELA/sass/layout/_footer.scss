@@ -1,0 +1,79 @@
+footer .activaFooter {
+    width: 35px;
+    height: 35px;
+    border: $mainGris 12px solid;
+    border-radius: 35px;
+    margin: 0 auto;
+    position: relative;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+footer .activaFooter:hover {
+    width: 35px;
+    height: 35px;
+    border: $mainRojo 12px solid;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    position: relative;
+}
+
+footer {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 2em;
+    overflow: hidden;
+    margin: 0 auto;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+footer:hover {
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    transition: all 1s ease;
+    height: 10em;
+}
+
+footer .contieneFooter {
+    margin-top: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, $mainGris, black);
+}
+
+.centroContenidoFooter {
+    @include floatW(50%);
+    margin-left: 25%;
+    text-align: center;
+    margin-top: 5px;
+}
+
+footer h3 {
+    font-size: $fontSize2;
+    margin-top: 3px;
+    font-weight: normal;
+}
+
+//TRANSFORMACION BOTON ACTIVA FOOTER
+.activaFooter {
+    animation: baila 1s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes baila {
+    0% {
+      transform: translate(0, 0);    
+    }
+    100% {
+      transform: translate(0, 20px);
+    }
+  }

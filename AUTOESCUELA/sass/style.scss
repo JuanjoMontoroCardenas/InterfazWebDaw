@@ -1,0 +1,26 @@
+//RESET
+@import "base/reset";
+
+//UTILITIES
+@import "utilities/variables";
+@import "utilities/mixins";
+
+//GENERAL
+@import "multimedia/img";
+@import "components/inputs";
+@import "components/buttons";
+
+//LAYOUT
+@import "layout/container";
+@import "layout/form";
+@import "layout/header";
+@import "layout/footer";
+
+//ADMIN
+@import "views/admin/altas/altaExamen";
+
+//USER
+@import "views/user/login";
+@import "views/user/listadoExamenes";
+
+//imagen fondo textura, subir a github, mapa de navegación, comprobar flex
