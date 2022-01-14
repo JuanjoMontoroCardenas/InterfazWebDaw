@@ -1,0 +1,29 @@
+div {
+  border: solid 3px white;
+  text-align: center;
+}
+
+.content {
+  padding: 30px;
+}
+
+.backGreen {
+  background-color: green;
+}
+
+.backCeleste {
+  background-color: cyan;
+}
+
+.backGrey {
+  background-color: grey;
+}
+
+.backOrange {
+  background-color: orange;
+}
+
+.backBlue {
+  background-color: blue;
+}
+/*# sourceMappingURL=style.css.map */
